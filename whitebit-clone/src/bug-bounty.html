@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitebit - earn</title>
+
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body  class="p-0 m-0 font-Inter font-[400] text-[#a6a6b0] text-[15px] leading-[23px]">
+    
+   <!-- Header -->
+   <header style="z-index: 999999;" class="bg-darkBgColor fixed top-0 w-full z-50">
+        <section class="flex justify-between items-center">
+            
+        <div class="flex gap-4 md:gap-5 lg:gap-8 items-center">
+                <a href=""><img class="w-[130px] h-[30px]" src="./assets/images/logo.svg" alt="main_logo"></a>
+                <nav class="text-white hidden lg:block font-[400]">
+                <ul class="flex gap-1 lg:gap-2 items-center">
+                        <li class="px-2 hidden">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="_9ff1"><path d="M0 0h4v4H0zM0 6h4v4H0zM0 12h4v4H0zM12 0h4v4h-4zM12 6h4v4h-4zM12 12h4v4h-4zM6 0h4v4H6zM6 6h4v4H6zM6 12h4v4H6z" class="fill-white stroke-white"></path></svg>
+                        </li>
+                        <li class="px-2 group">
+                            <a href="#" class="group-hover:text-primaryHoverColor">Markets</a>
+                        </li>
+    
+                        
+                        <li class="duration-200 px-2 hover:cursor-pointer nav_hover relative font-normal">
+                            <span class="flex gap-1 lg:gap-2 items-center group">
+                                <span class="group-hover:text-primaryHoverColor">Trading</span>
+                                <svg class="w-3 h-3 group-hover:rotate-180 duration-200 group-hover:duration-200 stroke-gray-200" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                                </svg>
+                            </span>
+
+                            <div class="hidden inner_nav_contents absolute p-3 py-3 top-6 max-h-[696px] w-[320px] lg:w-[414px] shadow-lg bg-[#1C1C21] rounded-md">
+                                <div class="inner_nav px-0 flex flex-col gap-2">
+                                    <a class="duration-200 group hover:bg-darkHoverColor px-4 py-2">
+                                        <div class="flex flex-col gap-1 text-left group">
+                                            <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Quick Exchange</span>
+                                            <span class="text-xs text-gray-400">Quick swapping of national currency and crypto</span>
+                                        </div>
+                                    </a>
+                                    <a class="duration-200 group hover:bg-darkHoverColor px-4 py-2">
+                                        <div class="flex flex-col gap-1 text-left group">
+                                            <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Spot</span>
+                                            <span class="text-xs text-gray-400">Trade crypto with all necessary tools</span>
+                                        </div>
+                                    </a>
+                                    <a class="duration-200 group hover:bg-darkHoverColor px-4 py-2">
+                                        <div class="flex flex-col gap-1 text-left group">
+                                            <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Margin</span>
+                                            <span class="text-xs text-gray-400">Trading with up to 20x leverage to multiply profits</span>
+                                        </div>
+                                    </a>
+                                    <a class="duration-200 group hover:bg-darkHoverColor px-4 py-2">
+                                        <div class="flex flex-col gap-1 text-left group">
+                                            <span class="group-hover:text-primaryHoverColor group-hover:duration-200">P2P</span>
+                                            <span class="text-xs text-gray-400">Person-to-Person Crypto exchange</span>
+                                        </div>
+                                    </a>
+                                    <a class="duration-200 group hover:bg-darkHoverColor px-4 py-2">
+                                        <div class="flex flex-col gap-1 text-left group">
+                                            <span class="group-hover:text-primaryHoverColor group-hover:duration-200">DEX</span>
+                                            <span class="text-xs text-gray-400">Decentralized exchange</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="duration-200 px-2 hover:cursor-pointer nav_hover relative font-normal">
+                            <span class="flex gap-1 lg:gap-2 items-center group">
+                                <span class="group-hover:text-primaryHoverColor">Futures</span>
+                                <svg class="w-3 h-3 group-hover:rotate-180 duration-200 group-hover:duration-200 stroke-gray-200" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                                </svg>
+                            </span>
+
+                            <div class="hidden inner_nav_contents absolute p-3 top-6 max-h-[696px] w-[320px] lg:w-[414px] shadow-lg bg-[#1C1C21] rounded-md">
+                                <div class="inner_nav px-0 flex flex-col gap-2">
+                                    <a class="duration-200 group hover:bg-darkHoverColor px-4 py-2">
+                                        <div class="flex flex-col gap-1 text-left group">
+                                            <span class="group-hover:text-primaryHoverColor group-hover:duration-200">USDT-margined contracts trading</span>
+                                            <span class="text-xs text-gray-400">Low trading fees, up to 20x leverage</span>
+                                        </div>
+                                    </a>
+                                    <a class="duration-200 group hover:bg-darkHoverColor px-4 py-2">
+                                        <div class="flex flex-col gap-1 text-left group">
+                                            <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Overview</span>
+                                            <span class="text-xs text-gray-400">Review all the news and updates here</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="duration-200 px-2 hover:cursor-pointer nav_hover relative font-normal">
+                            <span class="flex gap-1 lg:gap-2 items-center group">
+
+                                <span class="">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M8.519 6.373h0l1.694 2.205.212.275.132-.321L13.944.305c.667.469 1.279 1.01 1.823 1.613L11.8 11.563a1.138 1.138 0 01-.362.47 1.163 1.163 0 01-1.626-.213h0L8.117 9.614l-.212-.275-.132.321-2.236 5.432h0c-.082.2-.221.373-.4.499a1.165 1.165 0 01-.606.209H4.47c-.21 0-.416-.057-.595-.165a1.14 1.14 0 01-.423-.442h0L.32 9.354a1.119 1.119 0 01-.064-.85 1.14 1.14 0 01.558-.655c.266-.14.577-.17.866-.086.289.084.532.275.678.533l1.774 3.307.2.373.161-.392 2.039-4.953h0c.076-.186.201-.348.362-.471a1.162 1.162 0 011.626.213z" fill="url(#paint0_linear_26539_222642)" stroke="#1C1C20" stroke-width=".4"></path><defs><linearGradient id="paint0_linear_26539_222642" x1="-.015" y1="7.998" x2="16.645" y2="7.998" gradienComing SoonrSpaceOnUse"><stop stop-color="#E9C570"></stop><stop offset="1" stop-color="#F7B839"></stop></linearGradient></defs></svg>
+                                </span>
+                                <span class="group-hover:text-primaryHoverColor">WBT Boost</span>
+                                <svg class="w-3 h-3 group-hover:rotate-180 duration-200 group-hover:duration-200 stroke-gray-200" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                                </svg>
+                            </span>
+
+                            <div class="hidden inner_nav_contents absolute p-3 top-6 max-h-[696px] w-[320px] lg:w-[414px] shadow-lg bg-[#1C1C21] rounded-md">
+                                <div class="inner_nav px-0 flex flex-col gap-2">
+                                    <a class="duration-200 group hover:bg-darkHoverColor px-4 py-2">
+                                        <div class="flex flex-col gap-1 text-left group">
+                                            <span class="group-hover:text-primaryHoverColor group-hover:duration-200">WBT Dashboard</span>
+                                            <span class="text-xs text-gray-400">Explore dashboard to control your bonuses and special benefits</span>
+                                        </div>
+                                    </a>
+                                    <a class="duration-200 group hover:bg-darkHoverColor px-4 py-2">
+                                        <div class="flex flex-col gap-1 text-left group">
+                                            <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Overview</span>
+                                            <span class="text-xs text-gray-400">Learn more about WBT - native token of WhiteBIT exchange</span>
+                                        </div>
+                                    </a>
+                                    <a class="duration-200 group hover:bg-darkHoverColor px-4 py-2">
+                                        <div class="flex flex-col gap-1 text-left group">
+                                            <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Buy WBT</span>
+                                            <span class="text-xs text-gray-400">Start trading with WBT today</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                </ul> 
+                </nav>
+
+            </div>
+            
+            <!-- Login and Signup Section -->
+            <div class="flex items-center aligm-middle gap-2">
+                <div class="hidden md:flex gap-2 md:gap-3 lg:gap-5 items-center text-white stroke-white">
+                    <a href="./login.html" class="hover:text-primaryHoverColor capitalize">login</a>
+    
+                    <a href="" class="capitalize bg-primaryHoverColor text-black rounded text-xs py-2 px-4 w-max">Sign Up</a>
+    
+                    <div class=" nav_hover relative cursor-pointer">
+                        <span class="text-white capitalize translates_language cursor-pointer">EN</span>
+    
+                        <div class="hidden inner_nav_contents left-[calc(100% - 141px / 2)] absolute p-3 overflow-auto top-6 max-h-[500px] w-[141px] shadow-lg bg-[#1C1C21] rounded-md" style="left: calc(100% - 146px / 2)">
+                            <div class="inner_nav px-0 flex flex-col gap-1 ">
+    
+                                <a class="duration-200 group px-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="text-gray-400">English</span>
+                                    </div>
+                                </a>
+                            
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Українська
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Türkçe
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            繁體中文
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            简体中文
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            日本語
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Eesti keel
+                                        </span>
+                                    </div>
+                                </a>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Deutsch
+                                        </span>
+                                    </div>
+                                </a>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Español
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Portuguese
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            ქართული
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Русский
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                    <!-- Support -->
+                    <a href="" class="font-normal stroke-none group">
+                        <svg width="24" height="24" class="group-hover:stroke-primaryHoverColor" fill="none" xmlns="http://www.w3.org/2000/svg" class="_5zmb"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5A4.5 4.5 0 007.5 9H6a6 6 0 1112 0h-1.5A4.5 4.5 0 0012 4.5zm4.5 9c0 1.882-1.314 3.898-3.237 4.538l.474 1.424C16.314 18.602 18 15.982 18 13.5h-1.5zM3 10.75C3 9.784 3.784 9 4.75 9H7.5v6.55a.95.95 0 01-.95.95h-1.8A1.75 1.75 0 013 14.75v-4zm1.75-.25a.25.25 0 00-.25.25v4c0 .138.112.25.25.25H6v-4.5H4.75z" fill="#fff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21 10.75A1.75 1.75 0 0019.25 9H16.5v6.55c0 .525.425.95.95.95h1.8A1.75 1.75 0 0021 14.75v-4zm-1.75-.25a.25.25 0 01.25.25v4a.25.25 0 01-.25.25H18v-4.5h1.25zM12 18a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0z" fill="#fff"></path></svg>
+                    </a>
+                </div>
+                <span class="open__aside cursor-pointer flex lg:hidden align-middle group justify-center">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-8 h-8 group-hover:stroke:text-blue-600 duration-300 group-hover:duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"></path>
+                    </svg>
+                </span>
+            </div>
+
+
+        </section>
+
+        <!-- Phone Header -->
+        <aside class="relative text-black hidden">
+            <section class="fixed flex flex-col justify-between left-0 bottom-0 right-0 top-0 z-50 bg-white w-full h-screen p-2">
+
+                <!-- CLose Nav -->
+                <span class="close__aside cursor-pointer absolute top-5  right-10 flex align-middle group justify-center">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-6 hover:stroke-blue-500 h-6 group-hover:stroke:text-blue-600 duration-300 group-hover:duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </span>
+                <ul class="flex gap-7 flex-col items-start">
+                    <li class="px-2">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="_9ff1"><path d="M0 0h4v4H0zM0 6h4v4H0zM0 12h4v4H0zM12 0h4v4h-4zM12 6h4v4h-4zM12 12h4v4h-4zM6 0h4v4H6zM6 6h4v4H6zM6 12h4v4H6z" class="fill-white stroke-white"></path></svg>
+                    </li>
+                    <li class="px-2 group">
+                        <a href="#" class="group-hover:text-primaryHoverColor">Markets</a>
+                    </li>
+
+                    
+                    <li class="duration-200 px-2 hover:cursor-pointer nav_hover relative font-normal">
+                        <span class="flex gap-2 items-center group">
+                            <span class="group-hover:text-primaryHoverColor">Trading</span>
+                            <svg class="w-3 h-3 group-hover:rotate-180 duration-200 group-hover:duration-200 stroke-gray-200" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                            </svg>
+                        </span>
+
+                        <div class="hidden inner_nav_contents relative p-3 py-3 border border-gray-200 top-2 shadow-lg rounded-md">
+                            <div class="inner_nav px-0 flex flex-col gap-2">
+                                <a class="duration-200 group hover:bg-gray-100 px-4 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Quick Exchange</span>
+                                        <span class="text-xs text-gray-400">Quick swapping of national currency and crypto</span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-gray-100 px-4 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Spot</span>
+                                        <span class="text-xs text-gray-400">Trade crypto with all necessary tools</span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-gray-100 px-4 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Margin</span>
+                                        <span class="text-xs text-gray-400">Trading with up to 20x leverage to multiply profits</span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-gray-100 px-4 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor group-hover:duration-200">P2P</span>
+                                        <span class="text-xs text-gray-400">Person-to-Person Crypto exchange</span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-gray-100 px-4 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor group-hover:duration-200">DEX</span>
+                                        <span class="text-xs text-gray-400">Decentralized exchange</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="duration-200 px-2 hover:cursor-pointer nav_hover relative font-normal">
+                        <span class="flex gap-2 items-center group">
+                            <span class="group-hover:text-primaryHoverColor">Futures</span>
+                            <svg class="w-3 h-3 group-hover:rotate-180 duration-200 group-hover:duration-200 stroke-gray-200" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                            </svg>
+                        </span>
+
+                        <div class="hidden inner_nav_contents  p-3 shadow-lg border border-gray-200 top-2 rounded-md">
+                            <div class="inner_nav px-0 flex flex-col gap-2">
+                                <a class="duration-200 group hover:bg-gray-100 px-4 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor group-hover:duration-200">USDT-margined contracts trading</span>
+                                        <span class="text-xs text-gray-400">Low trading fees, up to 20x leverage</span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-gray-100 px-4 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Overview</span>
+                                        <span class="text-xs text-gray-400">Review all the news and updates here</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="duration-200 px-2 hover:cursor-pointer nav_hover relative font-normal">
+                        <span class="flex gap-2 items-center group">
+
+                            <span class="">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="" ><path d="M8.519 6.373h0l1.694 2.205.212.275.132-.321L13.944.305c.667.469 1.279 1.01 1.823 1.613L11.8 11.563a1.138 1.138 0 01-.362.47 1.163 1.163 0 01-1.626-.213h0L8.117 9.614l-.212-.275-.132.321-2.236 5.432h0c-.082.2-.221.373-.4.499a1.165 1.165 0 01-.606.209H4.47c-.21 0-.416-.057-.595-.165a1.14 1.14 0 01-.423-.442h0L.32 9.354a1.119 1.119 0 01-.064-.85 1.14 1.14 0 01.558-.655c.266-.14.577-.17.866-.086.289.084.532.275.678.533l1.774 3.307.2.373.161-.392 2.039-4.953h0c.076-.186.201-.348.362-.471a1.162 1.162 0 011.626.213z" fill="url(#paint0_linear_26539_222642)" stroke="#1C1C20" stroke-width=".4"></path><defs><linearGradient id="paint0_linear_26539_222642" x1="-.015" y1="7.998" x2="16.645" y2="7.998" gradientUnits="userSpaceOnUse"><stop stop-color="#E9C570"></stop><stop offset="1" stop-color="#F7B839"></stop></linearGradient></defs></svg>
+                            </span>
+                            <span class="group-hover:text-primaryHoverColor">WBT Boost</span>
+                            <svg class="w-3 h-3 group-hover:rotate-180 duration-200 group-hover:duration-200 stroke-gray-200" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                            </svg>
+                        </span>
+
+                        <div class="hidden inner_nav_contents relative p-3 shadow-lg border border-gray-200 top-2 rounded-md">
+                            <div class="inner_nav px-0 flex flex-col gap-2">
+                                <a class="duration-200 group hover:bg-gray-100 px-4 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor group-hover:duration-200">WBT Dashboard</span>
+                                        <span class="text-xs text-gray-400">Explore dashboard to control your bonuses and special benefits</span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-gray-100 px-4 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Overview</span>
+                                        <span class="text-xs text-gray-400">Learn more about WBT - native token of WhiteBIT exchange</span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-gray-100 px-4 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor group-hover:duration-200">Buy WBT</span>
+                                        <span class="text-xs text-gray-400">Start trading with WBT today</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul> 
+
+                <!-- Login and Signup Section -->
+                <div class="flex gap-5 items-center text-black stroke-white">
+                    <a href="./login.html" class="hover:text-primaryHoverColor capitalize">login</a>
+
+                    <a href="" class="capitalize bg-primaryHoverColor text-black rounded text-xs py-2 px-4 w-max">Sign
+                        Up</a>
+
+                    <div class=" nav_hover relative cursor-pointer">
+                        <span class="text-white capitalize translates_language cursor-pointer">EN</span>
+
+                        <div class="hidden inner_nav_contents left-[calc(100% - 141px / 2)] absolute p-3 overflow-auto top-6 max-h-[500px] w-[141px] shadow-lg bg-[#1C1C21] rounded-md"
+                            style="left: calc(100% - 146px / 2)">
+                            <div class="inner_nav px-0 flex flex-col gap-1 ">
+
+                                <a class="duration-200 group px-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="text-gray-400">English</span>
+                                    </div>
+                                </a>
+
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Українська
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Türkçe
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            繁體中文
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            简体中文
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            日本語
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Eesti keel
+                                        </span>
+                                    </div>
+                                </a>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Deutsch
+                                        </span>
+                                    </div>
+                                </a>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Español
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Portuguese
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            ქართული
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="duration-200 group hover:bg-darkHoverColor px-3 py-2">
+                                    <div class="flex flex-col gap-1 text-left group">
+                                        <span class="group-hover:text-primaryHoverColor duration-200">
+                                            Русский
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Support -->
+                    <a href="" class="font-normal stroke-none group">
+                        <svg width="24" height="24" class="group-hover:stroke-primaryHoverColor" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="_5zmb">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 4.5A4.5 4.5 0 007.5 9H6a6 6 0 1112 0h-1.5A4.5 4.5 0 0012 4.5zm4.5 9c0 1.882-1.314 3.898-3.237 4.538l.474 1.424C16.314 18.602 18 15.982 18 13.5h-1.5zM3 10.75C3 9.784 3.784 9 4.75 9H7.5v6.55a.95.95 0 01-.95.95h-1.8A1.75 1.75 0 013 14.75v-4zm1.75-.25a.25.25 0 00-.25.25v4c0 .138.112.25.25.25H6v-4.5H4.75z"
+                                fill="#fff"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21 10.75A1.75 1.75 0 0019.25 9H16.5v6.55c0 .525.425.95.95.95h1.8A1.75 1.75 0 0021 14.75v-4zm-1.75-.25a.25.25 0 01.25.25v4a.25.25 0 01-.25.25H18v-4.5h1.25zM12 18a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0z"
+                                fill="#fff"></path>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </aside>
+    </header>
+
+
+    
+        
+    <main class=" w-full h-full">
+        
+        <div class="w-full h-full" style="background: linear-gradient(180deg,#f6f7fa,#faf7f6);">
+            <div class="py-10 lg:py-20 h-max" style="background-color: #1c1c21; ">
+                <div class="px-3 md:px-7  tablet:px-14 max-w-[90rem] w-full h-full mx-auto">
+
+                    <div class="gap-5 pb-5 items-center h-full flex flex-col text-center" style=" margin: auto ;">
+                    
+                        <h1 class="text-white font-Poppins text-3xl md:text-4xl lg:text-5xl font-bold">
+                            Bug Bounty
+                        </h1>
+                        <p class="p-0 m-auto sm:max-w-[600px] md:max-w-[700px] lg:max-w-[816px] text-center align-baseline">
+                            Safety is our top priority. Crypto exchange WhiteBIT cares about the security of each user. We encourage the search for vulnerabilities on the exchange and pay a reward for finding them.
+                        </p>
+                    </div>
+                    <div class="flex flex-col text-center items-center w-full  ">
+                        <h5 class="font-semibold text-lg text-white font-Inter">
+                            To be able to receive a reward for finding a vulnerability, you must:
+                        </h5>
+
+                        <div class="grid grid-cols-1 laptop:grid-cols-3 p-3 pb-0 py-5 md:py-8 md:pb-8 md:flex-row lg:flex-row w-full h-full items-center justify-center gap-4">
+                            <div class="bg-[#2E2E33] rounded-xl gap-3 tablet:gap-5 desktop:gap-3 h-full py-8 tablet:py-5 desktop:py-8 px-10 flex flex-col tablet:flex-row laptop:flex-col items-center justify-start laptop:justify-center w-full">
+
+                                <div class="bg-[#3C3C43] w-14 h-14 rounded-lg flex items-center justify-center">
+                                      <svg class="w-7 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12a7.5 7.5 0 1115 0 7.5 7.5 0 01-15 0zM12 3a9 9 0 100 18 9 9 0 000-18zm.75 4.5a.75.75 0 00-1.5 0V12c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V7.5z" fill="#fff"></path></svg>
+
+                                </div>
+
+                                <div class="flex flex-col gap-4 tablet:gap-3 justify-start lg:justify-center align-middle tablet:items-start desktop:text-center laptop:items-center">
+
+                                    <h5 class="text-white font-semibold text-lg font-Inter">Inform us about the vulnerability</h5>
+                                    <p class="font-Inter tablet:text-left laptop:text-center font-normal text-sm">do not spread information about it, and give us enough time to fix the vulnerability.</p>
+                                </div>
+                            </div>
+                            <div class="bg-[#2E2E33] rounded-xl gap-3 tablet:gap-5 desktop:gap-3 h-full py-8 tablet:py-5 desktop:py-8 px-10 flex flex-col tablet:flex-row laptop:flex-col items-center justify-start laptop:justify-center w-full">
+
+                                <div class="bg-[#3C3C43] w-14 h-14 rounded-lg flex items-center justify-center">
+                                   
+                                      <svg  class="w-7 text-white"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M7.125 4.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5zm-3.75 2.25a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM3 15.375a4.125 4.125 0 118.25 0v4.875a.75.75 0 01-1.5 0v-4.875a2.625 2.625 0 00-5.25 0v4.875a.75.75 0 01-1.5 0v-4.875zM16.875 9a1.875 1.875 0 100 3.75 1.875 1.875 0 000-3.75zM13.5 10.875a3.375 3.375 0 116.75 0 3.375 3.375 0 01-6.75 0zM12.75 19.125a4.125 4.125 0 118.25 0v1.125a.75.75 0 01-1.5 0v-1.125a2.625 2.625 0 00-5.25 0v1.125a.75.75 0 01-1.5 0v-1.125z" fill="#fff"></path></svg>
+
+                                </div>
+
+                                <div class="flex flex-col gap-4 tablet:gap-3 justify-start lg:justify-center align-middle tablet:items-start desktop:text-center laptop:items-center">
+
+                                    <h5 class="text-white font-semibold text-lg font-Inter">Make the necessary efforts</h5>
+                                    <p class="font-Inter font-normal text-sm">to avoid harm to the exchange and its users.</p>
+                                </div>
+                            </div>
+                            <div class="bg-[#2E2E33] rounded-xl gap-3 tablet:gap-5 desktop:gap-3 h-full py-8 tablet:py-5 desktop:py-8 px-10 flex flex-col tablet:flex-row laptop:flex-col items-center justify-start laptop:justify-center w-full">
+
+                                <div class="bg-[#3C3C43] w-14 h-14 rounded-lg flex items-center justify-center">
+
+                                    
+                                      <svg class="w-7 text-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5a7.5 7.5 0 00-5.625 12.46c.212.241.318.537.304.848-.012.283-.12.524-.226.703-.206.344-.537.665-.791.904l-.09.085H12a7.5 7.5 0 006.875-10.502.75.75 0 011.375-.6A9 9 0 0112 21H4.654c-.084-.001-.24-.003-.407-.046a1.038 1.038 0 01-.596-.404 1.007 1.007 0 01-.116-.928c.077-.22.214-.405.324-.535.177-.21.425-.44.635-.635.05-.045.096-.09.14-.13a4.07 4.07 0 00.489-.518A9 9 0 0115.75 3.815a.75.75 0 11-.626 1.365A7.47 7.47 0 0012 4.5z" fill="#fff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.515 5.455c.301.285.314.76.03 1.06l-5.25 5.55a.75.75 0 01-1.075.015L9.67 9.53a.75.75 0 111.06-1.06l2.005 2.004 4.72-4.99a.75.75 0 011.06-.029z" fill="#fff"></path></svg>
+                                </div>
+
+
+                                <div class="flex flex-col gap-4 tablet:gap-3 justify-start lg:justify-center align-middle tablet:items-start desktop:text-center laptop:items-center">
+
+                                    <h5 class="text-white font-semibold text-lg font-Inter">Do not mislead</h5>
+                                    <p class="font-Inter font-normal text-sm">to avoid harm to the exchange and its users.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="w-full bg-[#F7F7F8] flex flex-row py-20 px-5 sm:px-10 lg:px-16 laptop:px-paddingHorizon">
+                <div class="flex flex-col laptop:flex-row ">
+                    <div class="flex flex-col px-5 md:px-10 font-Inter">
+                        <h2 class="font-bold pb-5 text-3xl leading-10 font-Inter text-black">Reward</h2>
+                        <p class="w-full pb-10   text-[14px] text-[#565661]">We do not limit the maximum amount of rewards in any way and can increase the reward depending on the severity of the vulnerability. You are more likely to receive increased rewards if you show how vulnerability can be used to cause maximum harm.</p>
+                        <p class="pb-10 text-[#565661] text-[14px]">Here is a list of approximate rewards for detecting vulnerabilities:</p>
+                        <dl class="w-full">
+                            <div class="flex flex-row text-[#565661] border-b-[1.5px] justify-between w-full">
+                                <dt class="pb-5 font-Inter text-[14px]">Remote code execution</dt>
+                                <dt class="font-[600] text-[20px] pb-5 font-Inter">$10,000</dt>
+                            </div>
+                            <div class="flex flex-row mt-5 text-[#565661] border-b-[1.5px] justify-between w-full">
+                                <dt class="pb-5 font-Inter text-[14px]">Manipulating user balances</dt>
+                                <dt class="font-[600] text-[20px] pb-5 font-Inter">$10,000</dt>
+                            </div>
+                            <div class="flex flex-row mt-5 text-[#565661] border-b-[1.5px] justify-between w-full">
+                                <dt class="pb-5 font-Inter text-[14px]">XSS/CSRF/Clickjacking affecting user balances/trading/exchange/deposits</dt>
+                                <dt class="font-[600] text-[20px] pb-5 font-Inter">$2,000</dt>
+                            </div>
+                            <div class="flex flex-row mt-5 text-[#565661] border-b-[1.5px] justify-between w-full">
+                                <dt class="pb-5 font-Inter text-[14px]">Stealing information related to passwords API keys /personal information</dt>
+                                <dt class="font-[600] text-[20px] pb-5 font-Inter">$2,000</dt>
+                            </div>
+                            <div class="flex flex-row mt-5 text-[#565661] border-b-[1.5px] justify-between w-full">
+                                <dt class="pb-5 font-Inter text-[14px]">Partial authentication bypas</dt>
+                                <dt class="font-[600] text-[20px] pb-5 font-Inter">$1,500</dt>
+                            </div>
+                            <div class="flex flex-row mt-5 text-[#565661] border-b-[1.5px] justify-between w-full">
+                                <dt class="pb-5 font-Inter text-[14px]">Other vulnerability with clear potential for financial or data loss</dt>
+                                <dt class="font-[600] text-[20px] pb-5 font-Inter">$500</dt>
+                            </div>
+                            <div class="flex flex-row mt-5 text-[#565661] border-b-[1.5px] justify-between w-full">
+                                <dt class="pb-5 font-Inter text-[14px]">Other CSRF (excluding logout CSRF)</dt>
+                                <dt class="font-[600] text-[20px] pb-5 font-Inter">$500</dt>
+                            </div>
+
+                        </dl>
+                        <p class="pb-10 pt-10 text-[#565661] text-[14px]">Rewards for DDoS, Self-XSS, Spam and Social engineering attacks will NOT be granted.</p>
+                        <p class="pb-10 text-[#565661] text-[14px]">You can familiarize yourself with the subject of verification and the rules of the Bug Bounty program in the <a class="text-blue-400 underline" href="/bug-bounty-policy">Bug Bounty Policy</a>.</p>
+                    </div>
+                    <div class="bg-white shadow-xl flex flex-col rounded-xl lg:w-[400px] flex-none h-max overflow-hidden">
+                        <div class="p-8">
+                            <h5 class="text-lg font-semibold font-Outfit text-black ">Have you found a vulnerability?</h5>
+                            <p class="pb-10 text-[#565661] text-sm py-3">To report it, send us an e-mail, we will contact you as soon as possible and solve the problem.</p>
+                            <a class="bg-[#E3C682] p-5 my-3 w-full rounded-lg h-16 text-black text-center flex items-center justify-center flex-row text-[15px] font-semibold" href="mailto:support@whitebit.com"> 
+                             Contact Support
+                             </a>
+                            <a class="border p-5 my-3 rounded-lg h-16 text-black text-center flex items-center justify-center flex-row text-[15px] font-[300]" href="mailto:security@whitebit.com">
+                              
+                             Send vulnerability to Security
+                 
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   <!-- Footer -->
+   <footer class="bg-darkBgColor  mt-auto md:px-5 lg:px-10">
+       <section class="font-Inter">
+           <div class="sec grid gap-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+               <ul class="flex flex-col gap-2">
+                   <li class="py-2">
+                       <h5 class="font-semibold text-lg text-white font-Poppins">Trading</h5>
+                   </li>
+
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Exchange</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Spot</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Margin</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">P2P</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">DEX</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Futures</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Markets</a></li>
+               </ul>
+
+               <ul class="flex flex-col gap-2">
+                   <li class="py-2">
+                       <h5 class="font-semibold text-lg text-white font-Poppins">Products and Services</h5>
+                   </li>
+
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Crypto Lending</a>
+                   </li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Competition</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Referral Program</a>
+                   </li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">AML</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Token Listing</a></li>
+               </ul>
+
+               <ul class="flex flex-col gap-2">
+                   <li class="py-2">
+                       <h5 class="font-semibold text-lg text-white font-Poppins">Information</h5>
+                   </li>
+
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">About Company</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">FAQ</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Ask a question</a>
+                   </li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Status Page</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Fees</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">System Page</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Bug Bounty</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Coporate Identity</a>
+                   </li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Blog</a></li>
+               </ul>
+
+
+               <ul class="flex flex-col gap-2">
+                   <li class="py-2">
+                       <h5 class="font-semibold text-lg text-white font-Poppins">Documentation</h5>
+                   </li>
+
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">API</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Use agreement</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">AML policy</a></li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor duration-200"><a href="">Privacy policy</a>
+                   </li>
+
+                   <li class="text-gray-300 hover:text-primaryHoverColor flex flex-col pt-1 duration-200">
+                       <span class="font-[400] text-white">New assets requests</span>
+                       <a href="" class="text-blue-500 underline">listing@whitebit.com</a>
+                   </li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor flex flex-col pt-1 duration-200">
+                       <span class="font-[400] text-white">Supports</span>
+                       <a href="" class="text-blue-500 underline">supports@whitebit.com</a>
+                   </li>
+                   <li class="text-gray-300 hover:text-primaryHoverColor flex flex-col pt-1 duration-200">
+                       <span class="font-[400] text-white">Partnerships</span>
+                       <a href="" class="text-blue-500 underline">partnerships@whitebit.com</a>
+                   </li>
+               </ul>
+           </div>
+
+
+           <div class="flex justify-between flex-col gap-2 pb-5 md:flex-row">
+
+               <!-- Social Links -->
+               <div class="social_links">
+                   <a class="w-max gap-2 inline-block p-2 cursor-pointer hover:text-primaryHoverColor duration-200">
+                       <span class="flex items-center gap-2">
+                           <img src="./assets/images/twitter.svg" alt="twitter">
+                           <span class="text-sm">Twitter</span>
+                       </span>
+                   </a>
+                   <a class="w-max gap-2 inline-block p-2 cursor-pointer hover:text-primaryHoverColor duration-200">
+                       <span class="flex items-center gap-2">
+                           <img src="./assets/images/telegram.svg" alt="telegram">
+                           <span class="text-sm">Telegram</span>
+                       </span>
+                   </a>
+                   <a class="w-max gap-2 inline-block p-2 cursor-pointer hover:text-primaryHoverColor duration-200">
+                       <span class="flex items-center gap-2">
+                           <img src="./assets/images/medium.svg" alt="medium">
+                           <span class="text-sm">Medium</span>
+                       </span>
+                   </a>
+                   <a class="w-max gap-2 inline-block p-2 cursor-pointer hover:text-primaryHoverColor duration-200">
+                       <span class="flex items-center gap-2">
+                           <img src="./assets/images/facebook.svg" alt="facebook">
+                           <span class="text-sm">Facebook</span>
+                       </span>
+                   </a>
+                   <a class="w-max gap-2 inline-block p-2 cursor-pointer hover:text-primaryHoverColor duration-200">
+                       <span class="flex items-center gap-2">
+                           <img src="./assets/images/linkedin.svg" alt="Linkedin">
+                           <span class="text-sm">Linkedin</span>
+                       </span>
+                   </a>
+                   <a class="w-max gap-2 inline-block p-2 cursor-pointer hover:text-primaryHoverColor duration-200">
+                       <span class="flex items-center gap-2">
+                           <img src="./assets/images/youtube.svg" alt="Youtube">
+                           <span class="text-sm">Youtube</span>
+                       </span>
+                   </a>
+                   <a class="w-max gap-2 inline-block p-2 cursor-pointer hover:text-primaryHoverColor duration-200">
+                       <span class="flex items-center gap-2">
+                           <img src="./assets/images/instagram.svg" alt="Instagram">
+                           <span class="text-sm">Instagram</span>
+                       </span>
+                   </a>
+               </div>
+
+               <div class="flex gap-2">
+                   <img class="h-[27px] md:h-[30px]" src="./assets/images/visa.svg" alt="visa">
+                   <img class="h-[27px] md:h-[30px]" src="./assets/images/masterCard.svg" alt="MasterCard">
+                   <img class="h-[27px] md:h-[30px]" src="./assets/images/LGP.svg" alt="Google Partner">
+               </div>
+           </div>
+
+           <div class="flex  justtify-between w-full py-5" style="border-top: 1px solid var(--color-border);">
+               <span class="text-gray-400">© 2018 – 2023 WhiteBIT.com. All rights reserved</span>
+           </div>
+       </section>
+
+
+   </footer>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+   <script src="./assets/js/main.js"></script>
+
+   <script>
+       $(document).ready(function () {
+           $("form label.smooth").find("[name]").each(function (__element) {
+               console.log(__element);
+           });
+
+           $("#add_a_note").click(function () {
+               $(this).parent().find("[for=notes]").toggleClass('hidden');
+           });
+       });
+   </script>
+   </body>
+
+   </html>
